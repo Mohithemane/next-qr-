@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
-function page() {
+const  page=()=> {
   const [qrCodeURL, setQRCodeURL] = useState("");
 
   const urlValue=React.useRef<HTMLInputElement>(null)
