@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
-const  page=()=> {
+const  Home=()=> {
   const [qrCodeURL, setQRCodeURL] = useState("");
 
   const urlValue=React.useRef<HTMLInputElement>(null)
@@ -21,4 +21,4 @@ const  page=()=> {
   );
 }
 
-export default page;
+export default Home;
