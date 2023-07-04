@@ -12,9 +12,9 @@ const  Home=()=> {
     setQRCodeURL(url!)
   }
   return (
-    <div className='h-screen gap-4 w-full flex justify-center items-center flex-col'>
+    <div className='h-full gap-4 w-full flex justify-center items-center flex-col'>
       <h1 className='font-bold text-2xl'>Qr Code Generator</h1>
-      <input className='border p-2 border-black' type="text" ref={urlValue} />
+      <input className='border p-2 rounded-2xl w-72 text-zinc-800 border-gray-600' type="text" ref={urlValue} />
       <QRCode value={qrCodeURL} renderAs="canvas" />
       <button className='border p-2 rounded-lg' onClick={handleClick}>submit url</button>
     </div>
